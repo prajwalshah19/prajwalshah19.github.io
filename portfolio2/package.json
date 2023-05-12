@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "portfolio2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,12 +7,11 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
-    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
-    "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0",
+    "react-router": "^6.11.1",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -20,8 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-css": "node-sass src/App.scss -o src/"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

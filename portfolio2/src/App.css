@@ -1,0 +1,486 @@
+
+
+  
+
+html {
+  background-color: #3c486b;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30vw;
+  background-color: #F0f0f0;
+  padding: 20px;
+  color: #3c486b;
+  font-size: 1.8rem;
+  z-index: 2;
+  @media (max-width: 768px) {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+
+  }
+
+  
+}
+
+.sidebarElements {
+    display: flex;
+    flex-direction: column;
+    
+    @media (max-width: 768px) {
+      display: none;
+
+    }
+}
+
+.sidebarElements > ul {
+  list-style: none;
+  
+}
+
+.sidebarElements > ul > li > a {
+  color: #3c486b;
+  text-decoration: none;
+  
+}
+
+.sidebarElements > ul > li > a:hover{
+  color: darkgrey;
+}
+
+
+.logoCon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 20% 10% 20%;
+}
+.logoCon > a > img {
+    max-width: 3.5vw;
+    filter: invert(26%) sepia(15%) saturate(1440%) hue-rotate(187deg) brightness(95%) contrast(89%);
+    
+}
+
+.logoCon > a > img:hover {
+  
+  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(70deg) brightness(92%) contrast(96%);
+  
+}
+
+.menuCon {
+  @media (min-width: 768px) {
+      display: none;
+
+    }  
+  display: flex;
+  align-items: center;
+  padding-left: 93%;
+}
+
+.menuCon > img {
+    max-width: 8vw;
+    filter: invert(26%) sepia(15%) saturate(1440%) hue-rotate(187deg) brightness(95%) contrast(89%);
+
+}
+
+.menuCon > img:hover {
+  
+  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(70deg) brightness(92%) contrast(96%);
+}
+
+.fullScreenMenu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    font-size: 4em;
+    background-color: #F0f0f0;
+    color: #3c486b;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      display: none;
+
+    }
+    z-index: 2;
+   
+}
+.fullScreenMenu > .logoCon {
+  padding: 10% 30%;
+}
+.fullScreenMenu > .logoCon > a > img{
+    max-width: 10vw;
+}
+
+
+.fullScreenImageCon {
+    padding-left: 90%;
+}
+.fullScreenImageCon > img {
+  max-width: 10vw;
+  filter: invert(26%) sepia(15%) saturate(1440%) hue-rotate(187deg) brightness(95%) contrast(89%);
+
+}
+
+.fullScreenItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.fullScreenItems > ul {
+  list-style: none;
+
+}
+
+.fullScreenItems > ul > li >a {
+  color: #3c486b;
+  text-decoration: none;
+
+}
+.fullScreenItems > ul > li > a:hover {
+ color: darkgray;
+
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 0.4em;
+}
+
+.footerCon {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+.homeScreen, .projects, .about, .progress, .contact{
+    color:white;
+    background-color: #3c486b;
+    padding: 0vh 3vw 0 3vw;
+    min-height: 80vh;
+    max-width: 70vw;
+
+    @media (max-width: 768px) {
+      min-width: 100vw;
+      padding-top: 4vh;
+    }
+    
+}
+
+.homeScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.homeScreen > h1 {
+  font-size: 3.5em;
+  @media (max-width: 768px) {
+    margin-top: 10vh;
+  }
+}
+
+.education {
+  margin-top: 3vh;
+  padding-left: 0;
+}
+
+.education  >h3 {
+  font-size: 1em;
+  
+
+  
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  color: #3c486b;
+}
+
+.projectCard {
+  color: #3c486b;
+  min-height: 100%;
+  
+}
+.accendreIcon {
+  filter: invert(17%) sepia(29%) saturate(5683%) hue-rotate(209deg) brightness(98%) contrast(92%);
+}
+
+.cardButton {
+  color: #3c486b !important;
+  outline-color: #3c486b !important;
+}
+
+.cardButton:hover {
+  color: #F0f0f0 !important;
+  outline-color: #3c486b !important;
+  background-color: #3c486b !important;
+}
+
+#accendre {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#titleImage {
+  filter: invert(100%) sepia(2%) saturate(7489%) hue-rotate(197deg) brightness(105%) contrast(100%);
+  max-width: 90vw;
+
+
+  @media (min-width: 768px) {
+    max-width: 60vw;
+    margin-top: 1vh;
+  }
+  
+}
+
+.synopsisCon > h2{
+
+  font-size: 2em;
+  padding: 0 0 0.5vh 0;
+}
+
+.synopsisCon > h4 {
+  font-size: 1em;
+}
+
+.synopsisCon > p {
+  font-size: 0.8em;
+}
+
+#tocMenu {
+  color: #3c486b !important;
+  outline-color: #3c486b !important;
+
+}
+
+#bmcInteractive {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: #F0f0f0;
+  
+  padding: 0 0 2vh 0;
+}
+
+.bmcICon {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+  border: 2px solid #F0f0f0; 
+  font-weight: 600;
+
+}
+
+.bmcICon:hover {
+  background-color: #F0f0f0;
+  color: #3c486b;
+  
+  font-size: 0.7em;
+}
+
+
+
+
+
+
+#problem {
+  grid-row: 1 /1;
+  grid-column: 1/1;
+  
+  
+}
+
+#problem:after {
+  content: 'Customer \A Problem';
+  white-space: pre-wrap;
+}
+
+#problem:hover:after {
+
+  content: 'High school athletes don\'t have access to sport-specifc training. ';
+}
+
+#competition {
+  grid-row: 2 /2;
+  grid-column: 1/1;
+  
+}
+
+#competition:after {
+  content: 'Competition';
+}
+
+#competition:hover:after {
+
+  content: 'Nike Training Club \A Fitbod \A Volt Athletics';
+  white-space: pre-wrap;
+}
+
+#solution {
+  grid-row: 1 /1;
+  grid-column: 2/2;
+  
+}
+
+#solution:after {
+  content: 'Solution';
+}
+
+#solution:hover:after {
+
+  content: 'Create a fitness platform that geared toward high school athletes.';
+  white-space: pre-wrap;
+}
+
+#keyMetrics {
+  grid-row: 2 /2;
+  grid-column: 2/2;
+ 
+}
+
+#keyMetrics:after {
+  content: 'Key Metrics';
+}
+
+#keyMetrics:hover:after {
+
+  content: '';
+  white-space: pre-wrap;
+}
+
+#uvp {
+  grid-row: 1 /3;
+  grid-column: 3/3;
+  
+}
+
+#uvp:after {
+  content: 'Unique Value \A Proposition';
+  white-space: pre-wrap;
+}
+
+#uvp:hover:after {
+  font-size: 0.8em;
+  content: 'Accendre is built for athletes, by athletes. Using a science backed training methodology known as the French Contrast Model, our algorithm builds workout plans specifc to each users goals and aspirations.';
+  white-space: pre-wrap;
+}
+
+#costStructure {
+  grid-row: 3 /3;
+  grid-column: 1/4;
+  
+}
+
+#costStructure:after {
+  content: 'Cost Structure';
+}
+
+#costStructure:hover:after {
+
+  content: '';
+  white-space: pre-wrap;
+}
+
+#customerRel {
+  grid-row: 1 /1;
+  grid-column: 4/4;
+  
+}
+
+#customerRel:after {
+  content: 'Customer Relationships'
+}
+
+#customerRel:hover:after {
+
+  content: '';
+  white-space: pre-wrap;
+}
+
+#channels {
+  grid-row: 2 /2;
+  grid-column: 4/4;
+  
+}
+
+#channels:after {
+  content: "Channels"
+}
+
+#channels:hover:after {
+
+  content: '';
+  white-space: pre-wrap;
+}
+
+#targetMarket {
+  grid-row: 1 /1;
+  grid-column: 5/5;
+  
+}
+
+#targetMarket:after {
+  content: 'Target Market'
+}
+
+#targetMarket:hover:after {
+
+  content: 'Primary: High school athletes \A Secondary: Parents and guardians of athletes';
+  white-space: pre-wrap;
+}
+
+#earlyAdop {
+  grid-row: 2 /2;
+  grid-column: 5/5;
+  
+}
+
+#earlyAdop:after {
+  content: "Early Adopters"
+}
+
+#earlyAdop:hover:after {
+
+  content: 'Track, Football, and Basketball players in the Naperville area';
+  white-space: pre-wrap;
+}
+
+#revenueModel {
+  grid-row: 3 /3;
+  grid-column: 4/6;
+  
+}
+
+#revenueModel:after {
+  content: 'Revenue Model'
+}
+
+#revenueModel:hover:after {
+
+  content: 'Freemium Revenue Model \A Free Subscription: Pre-made workouts \A Premium Subscription: Access to Accendre Algorithm and customized workout program';
+  white-space: pre-wrap;
+}
+
+
+
+
+

@@ -428,7 +428,7 @@ html {
 
 #channels:hover:after {
 
-  content: '';
+  content: 'Website \A App Store';
   white-space: pre-wrap;
 }
 

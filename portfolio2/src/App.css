@@ -20,7 +20,7 @@ html {
   color: #3c486b;
   font-size: 1.8rem;
   z-index: 2;
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     position: fixed;
     width: 100%;
@@ -35,7 +35,7 @@ html {
     display: flex;
     flex-direction: column;
     
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       display: none;
 
     }
@@ -55,7 +55,17 @@ html {
 .sidebarElements > ul > li > a:hover{
   color: darkgrey;
 }
+.topCon {
 
+  text-align: center;
+  
+  
+}
+.logoImg {
+
+  filter: invert(26%) sepia(15%) saturate(1440%) hue-rotate(187deg) brightness(95%) contrast(89%);
+  max-width: 50%;
+}
 
 .logoCon {
     display: flex;
@@ -75,13 +85,15 @@ html {
 }
 
 .menuCon {
-  @media (min-width: 768px) {
-      display: none;
-
-    }  
   display: flex;
   align-items: center;
   padding-left: 93%;
+
+  @media screen  and (min-width: 768px) {
+      display: none;
+
+    }  
+
 }
 
 .menuCon > img {
@@ -104,7 +116,7 @@ html {
     color: #3c486b;
     display: flex;
     flex-direction: column;
-    @media (min-width: 768px) {
+    @media screen  and (min-width: 768px) {
       display: none;
 
     }
@@ -169,7 +181,7 @@ html {
     min-height: 80vh;
     max-width: 70vw;
 
-    @media (max-width: 768px) {
+    @media screen  and (max-width: 768px) {
       min-width: 100vw;
       padding-top: 4vh;
     }
@@ -187,7 +199,7 @@ html {
 
 .homeScreen > h1 {
   font-size: 3.5em;
-  @media (max-width: 768px) {
+  @media screen  and (max-width: 768px) {
     margin-top: 10vh;
   }
 }
@@ -242,7 +254,7 @@ html {
   max-width: 90vw;
 
 
-  @media (min-width: 768px) {
+  @media screen  and (min-width: 768px) {
     max-width: 60vw;
     margin-top: 1vh;
   }
@@ -487,7 +499,7 @@ html {
   display: flex;
 
 
-  @media (max-width: 600px) {
+  @media screen  and (max-width: 600px) {
     flex-direction: column;
     align-items:center;
     padding: 0 0 2vh 0;

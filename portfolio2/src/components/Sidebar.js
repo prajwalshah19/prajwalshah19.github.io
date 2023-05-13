@@ -5,6 +5,7 @@ import menu from '../assets/menu.svg'
 import linkedin from '../assets/linked.svg'
 import github from '../assets/github.svg'
 import cross from '../assets/cross.svg'
+import logo from '../assets/logo.svg'
 import {Link} from 'react-router-dom'
 export function Sidebar(props) {
 
@@ -22,6 +23,13 @@ export function Sidebar(props) {
         className = 'sidebarCon'
         >
             <div className="sidebar">
+
+            <div
+            className = "topCon"
+            >
+                <Link to = "/" > <img className = "logoImg" src = {logo}></img></Link>
+
+            </div>
             
             <div
             className='sidebarElements'

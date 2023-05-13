@@ -481,6 +481,47 @@ html {
 }
 
 
+#prototypeCon, #marketingCon {
+  overflow-x: scroll;
+  font-size: 0.8em;
+  display: flex;
 
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items:center;
+    padding: 0 0 2vh 0;
+  }  
+}
+#prototypeCon > p {
+  padding: 0 3vw 0 0;
+}
+.prototype1 {
+  max-height: 70vh;
+
+  
+
+}
+
+#marketingCon {
+  flex-direction: column;
+}
+
+#marketingImageCon {
+  display: flex;
+}
+
+#marketingImageCon > a > img {
+  max-width: 3vw;
+  padding-right: 0.75vw;
+  filter: invert(100%) sepia(2%) saturate(7489%) hue-rotate(197deg) brightness(105%) contrast(100%);
+}
+
+#marketingImageCon > a > img:hover{
+  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(70deg) brightness(92%) contrast(96%); 
+
+
+
+}
 
 

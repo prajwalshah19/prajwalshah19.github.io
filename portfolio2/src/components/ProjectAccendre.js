@@ -3,6 +3,11 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 import '../App.css'
 import AccendreIcon from '../assets/accendre.svg'
+import insta from '../assets/instagram.svg'
+import tiktok from '../assets/tiktok.svg'
+
+import SlideShow from './SlideShow.js'
+
 export function ProjectAccendre(props) {
 
     return (
@@ -77,17 +82,52 @@ export function ProjectAccendre(props) {
             </div>
             <div
             className='synopsisCon'
-            id = "prototypeCon"
+            
             >
                 <h3>Prototype</h3>
+                <div
+                id = "prototypeCon"
+                >
+                    <p >Accendre’s prototype consisted of a two step approach to validating our idea while building the product. We started with a low tech, proof-of-concept prototype. For this, we approached a group of fifteen close friends, who also happened to be athletes, and asked them to fill out a short form detailing their sport and athletic goals. From there, each week we manually built them a workout program based on the French Contrast Model and sent it to them. At the end of every month, we also asked each beta user to fill out a feedback form highlighting changes that needed to be made. We were inspired to create a “wizard of oz” MVP (minimal viable product) like this from the founders of Zappos, and it allowed us to validate Accendre without having to approach the steep learning curve that comes with app development<br></br><br></br>Next, we got to work developing our web-app beta. This required an intensive from our team and even led us to recruit more teammates to join Accendre as a part of our software engineering team. For this beta, I served as the lead frontend and algorithm developer. First, I used Python to create an algorithm that generated workout programs that ran true to the French Contrast Model. Initially, the algorithm only supported athletes from track and field, basketball, and football, but eventually it encompassed every major high school sport. Additionally, I also had to learn Javascript and the React framework to construct our application. This was arguably the most difficult part of my job at Accendre, but also yielded a lot of positive feedback when we launched the web app to beta users.</p>
+
+                    <SlideShow
+                        className = "slides"
+                        items = {[
+                             {
+                                img : 0, 
+                                style : "prototype1",
+                                title : "Low Tech MVP"
+
+
+                            },
+                            {
+                                img : 1, 
+                                style : "prototype1",
+                                title : "Web App MVP"
+
+                            }
+
+                        ]}
+                    />
+                </div>
                 
             </div>
             <div
             className='synopsisCon'
-            id = "marketingCon"
             >
                 <h3>Marketing</h3>
-                
+                <div
+                id = "marketingCon"
+                >
+                    <p>Accendre's primary approach to marketing revolved around utilizing social media platforms and word of mouth marketing to target high school athletes. By leveraging popular social media platforms such as Instagram and Tik Tok, the startup was able to build a strong online presence and create a buzz around its offerings. </p>
+                <div
+                id = 'marketingImageCon'
+                >
+                    <a href='https://instagram.com/_accendre?igshid=NTc4MTIwNjQ2YQ=='><img src = {insta} ></img></a>
+                    <a href = 'https://www.tiktok.com/@accendre?_t=8cGvr7rY6Oc&_r=1'><img src = {tiktok}></img></a>
+
+                </div>
+                </div>
             </div>
         </div>
 

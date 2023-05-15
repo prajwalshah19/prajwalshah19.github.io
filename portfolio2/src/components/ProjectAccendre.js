@@ -175,7 +175,12 @@ export function ProjectAccendre(props) {
         className = 'rExpCon'
         >
         <h4>Learning Experiences</h4>
-
+        <p>In my two years as a member of the Incubator program, I also had the opportunity to expand my network and gain insight from many experts in an effort to further my entrepreneurial skillset. Here are some of the highlights.</p>
+        <p><strong>Meeting with the founders of tech startups <em>Fizzbuzz</em> and <em>TripCaddie</em>:</strong> When first starting Accendre, my team and I had a very clear vision of what we wanted our product to be. However, that’s about all we knew. By utilizing our network, we were able to meet with the founders of Fizzbuzz, an entreprenuership education startup, and TripCaddie, an online golf trip planner. Both of these founders understood how to build a business that revolved around a web-based product and really helped us in the business development process.</p>
+        <p><strong>Meeting D1 Athletes and Coaches to refine workout algorithm:</strong> While we had based our workout algorithm based on the scientifically proven French Contrast training method, problems arised when we attempted to expand our user base to athletes outside of power-based sports such as football and track and field. To do this, we consulted former division one athletes and coaches with various athletic backgrounds to see how we could apply our algorithm to any sport.</p>
+        <p><strong>Trip to 1871 and NIU Business Conference:</strong> I also had the opportunity to visit the 1871 Business Accelerator in Chicago downtown and go a conference hosted by Northern Illinois University. In both these experiences, I was able to improve my entrepreneurial mindset and expand my network.</p>
+        <p><strong>District 203 Tradeshow:</strong> In both my years in the Incubator program, I participated in the District 203 tradeshow. In this event, startups from all over our district came together and met with each other as well local business leaders. Through this experience, I formed relationships with like minded students that provided a mutual benefit as we all aimed to further our business.</p>
+        
         </div>
         </div>
 

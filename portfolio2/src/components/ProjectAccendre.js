@@ -10,6 +10,24 @@ import SlideShow from './SlideShow.js'
 
 export function ProjectAccendre(props) {
 
+    let [index, setIndex] = React.useState(0)
+
+    const links = [
+        "https://www.youtube.com/watch?v=UF8uR6Z6KLc",
+        "https://www.youtube.com/watch?v=bNpx7gpSqbY&pp=ygUZZW50cmVwcmVuZXVyc2hpcCB0ZWQgdGFsaw%3D%3D",
+        "https://www.youtube.com/watch?v=qp0HIF3SfI4&pp=ygUUc2ltb24gc2luZWsgdGVkIHRhbGs%3D"
+    ]
+
+    function onClick(event) {
+        console.log('click worked')
+        console.log(event)
+        const {id} = event.target
+        console.log(index)
+        setIndex(index => id)
+        console.log(index)
+    }
+
+
     return (
         <div
         className='projects'
@@ -119,14 +137,7 @@ export function ProjectAccendre(props) {
                 <div
                 id = "marketingCon"
                 >
-                    <p>Accendre's primary approach to marketing revolved around utilizing social media platforms and word of mouth marketing to target high school athletes. By leveraging popular social media platforms such as Instagram and Tik Tok, the startup was able to build a strong online presence and create a buzz around its offerings. </p>
-                <div
-                id = 'marketingImageCon'
-                >
-                    <a href='https://instagram.com/_accendre?igshid=NTc4MTIwNjQ2YQ=='><img src = {insta} ></img></a>
-                    <a href = 'https://www.tiktok.com/@accendre?_t=8cGvr7rY6Oc&_r=1'><img src = {tiktok}></img></a>
-
-                </div>
+                    <p>Accendre's primary approach to marketing revolved around utilizing social media platforms and word of mouth marketing to target high school athletes. By leveraging popular social media platforms such as <strong><a href='https://instagram.com/_accendre?igshid=NTc4MTIwNjQ2YQ=='>Instagram</a></strong> and <strong><a href = 'https://www.tiktok.com/@accendre?_t=8cGvr7rY6Oc&_r=1'>Tik Tok</a></strong>, the startup was able to build a strong online presence and create a buzz around its offerings. </p>
                 </div>
             </div>
         </div>
@@ -136,6 +147,31 @@ export function ProjectAccendre(props) {
         id = "entMind"
         >
         <h2>Entrepreneurial Mindset</h2>
+        <p>At its core, the Incubator class and my experience with Accendre taught me that entrepreneurship revolves around the idea of solving problems. While it's easy to get fixated on a specific solution or product, a successful business's purpose is never to sell a product, it's to fill a gap and improve the overall user experience. At times during the Accendre development process, I lost sight of this. As the lead frontend designer, I would obsess over every little detail in the user experience, and in the process, overlook our end goal - to provide effective and customizable workout programs to aspiring athletes. Eventually I figured out that Accendre wasn’t selling a web app or algorithm, rather those were just mediums to deliver our company’s vision of making the world a faster and stronger place.</p>
+        <h3>Learning Resources and Experiences</h3>
+        <p>Part of my job not just at Accendre but also as a student in the Incubator class was to continuously learn and improve my entrepreneurial and leadership skills. I did this through two main channels - watching TED talks and speeches given regarding these topics and participating in various networking and startup-minded experiences.  </p>
+        <div
+        className = 'rVideosCon'
+        >
+        <h4>TED Talks and Videos</h4>
+        <p style={index == 0 ? {color: "#FFFFFF"} : {color:"#BEBEBE" }} id = '0' onClick = {onClick}><strong>Steve Jobs Commencement Address</strong>: I will admit, watching this was more inspirational than educational. Nevertheless, this speech taught me important lessons such as to question everything, never settle, and stay hungry and foolish in every endeavor. </p>
+        <p style={index == 1 ? {color: "#FFFFFF"} : {color:"#BEBEBE" }} id = '1' onClick = {onClick}><strong>Bill Gross - The Single Biggest Reason Why Startups Succeed</strong>: In this TED talk, Bill Gross took a very analytical approach to understanding the factors behind startup success. What he figured out - and what has resonated with me since - is that <em>timing</em>, above all else (including venture capital funding) is the biggest reason why entrepreneurs succeed.</p>
+
+        <p style={index == 2 ? {color: "#FFFFFF"} : {color:"#BEBEBE" }} id = '2' onClick = {onClick}><strong>Simon Sinek - How Great Leaders Inspire Action:</strong> In this TED talk, Simon Sinek dives into the intricacies of leadership and common traits of good leaders. What he found was that before asking <em>What</em> or <em>How</em>, ask <em>Why</em>. This is the best way to convey ideas to your team in the most meaningful way.
+</p>
+
+
+        <div
+        className = 'iFrameCon'
+        >
+        <iframe
+        src = {links[index]}
+        />
+        </div>
+
+        </div>
+
+        <div></div>
         </div>
 
 

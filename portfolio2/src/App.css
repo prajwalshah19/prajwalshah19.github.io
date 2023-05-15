@@ -515,25 +515,17 @@ html {
 
 }
 
-#marketingCon {
-  flex-direction: column;
+#marketingCon > p > strong > a {
+  text-decoration: none;
+  color: white;
 }
 
-#marketingImageCon {
-  display: flex;
+.rVideosCon {
+  font-size: 0.8em;
 }
 
-#marketingImageCon > a > img {
-  max-width: 3vw;
-  padding-right: 0.75vw;
-  filter: invert(100%) sepia(2%) saturate(7489%) hue-rotate(197deg) brightness(105%) contrast(100%);
-}
-
-#marketingImageCon > a > img:hover{
-  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(70deg) brightness(92%) contrast(96%); 
-
-
-
+.iFrameCon {
+  text-align: center;
 }
 
 

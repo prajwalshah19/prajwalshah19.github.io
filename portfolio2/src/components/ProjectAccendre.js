@@ -13,10 +13,11 @@ export function ProjectAccendre(props) {
     let [index, setIndex] = React.useState(0)
 
     const links = [
-        "https://www.youtube.com/watch?v=UF8uR6Z6KLc",
-        "https://www.youtube.com/watch?v=bNpx7gpSqbY&pp=ygUZZW50cmVwcmVuZXVyc2hpcCB0ZWQgdGFsaw%3D%3D",
-        "https://www.youtube.com/watch?v=qp0HIF3SfI4&pp=ygUUc2ltb24gc2luZWsgdGVkIHRhbGs%3D"
+        "https://www.youtube.com/embed/Hd_ptbiPoXM",
+        "https://www.youtube.com/embed/bNpx7gpSqbY",
+        "https://www.youtube.com/embed/qp0HIF3SfI4"
     ]
+ 
 
     function onClick(event) {
         console.log('click worked')
@@ -164,9 +165,8 @@ export function ProjectAccendre(props) {
         <div
         className = 'iFrameCon'
         >
-        <iframe
-        src = {links[index]}
-        />
+<iframe width="560" height="315" src={links[index]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
         </div>
 
         </div>

@@ -165,13 +165,18 @@ export function ProjectAccendre(props) {
         <div
         className = 'iFrameCon'
         >
-<iframe width="560" height="315" src={links[index]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe className = 'iFrame' width="560" height="315" src={links[index]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         </div>
 
         </div>
 
-        <div></div>
+        <div
+        className = 'rExpCon'
+        >
+        <h4>Learning Experiences</h4>
+
+        </div>
         </div>
 
 

@@ -216,6 +216,14 @@ html {
   
 }
 
+#about {
+  margin: 7vh 0 0 0;
+}
+#about > h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -243,7 +251,7 @@ html {
   background-color: #3c486b !important;
 }
 
-#accendre {
+#accendre, #about {
   display: flex;
   flex-direction: column;
   color: white;
@@ -520,12 +528,20 @@ html {
   color: white;
 }
 
-.rVideosCon {
+.rVideosCon, .rExpCon {
   font-size: 0.8em;
 }
 
 .iFrameCon {
   text-align: center;
+}
+
+.iFrame {
+  width: 60vw;
+  margin-bottom: 3vh;
+  @media screen  and (max-width: 768px) {
+    width: 80vw;
+  }
 }
 
 

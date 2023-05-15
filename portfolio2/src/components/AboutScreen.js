@@ -5,7 +5,8 @@ export function AboutScreen(props) {
 
     return (
         <div
-        className = "homeScreen"
+        className = "projects"
+        id = "about"
         >
             <h1>About Me</h1>
             <div

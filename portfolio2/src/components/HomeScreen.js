@@ -22,6 +22,7 @@ export function HomeScreen(props) {
             className = 'buttonName'
             >
                 <Button onClick = {onButtonClick} className= 'mainButton' variant="outline-light" size="lg">Check Out My Work! </Button>
+                
             </div>
         </div>
     

@@ -79,10 +79,11 @@ export function Sidebar(props) {
                 className='fullScreenItems'
                 >
               <ul>
-                <li>< Link to = "/about" ><a>about</a></Link></li>
-                <li>< Link to = "/projects" ><a>projects</a></Link></li>
-                <li>< Link to = "/progress" ><a>progress</a></Link></li>
-                <li>< Link to = "/contact" ><a>contact</a></Link></li>
+                <li>< Link to = "/" onClick = {handleOpen}><a>home</a></Link></li>
+                <li>< Link to = "/about" onClick = {handleOpen} ><a>about</a></Link></li>
+                <li>< Link to = "/projects" onClick = {handleOpen} ><a>projects</a></Link></li>
+                <li>< Link to = "/progress" onClick = {handleOpen} ><a>progress</a></Link></li>
+                <li>< Link to = "/contact" onClick = {handleOpen} ><a>contact</a></Link></li>
 
             </ul>  
 
@@ -92,8 +93,8 @@ export function Sidebar(props) {
                 <div
             className='logoCon'
             >
-                <a href='https://www.linkedin.com/in/prajwalshah/'><img src = {linkedin} ></img></a>
-                <a href = 'https://github.com/prajwalshah19'><img src = {github}></img></a>
+                <a href='https://www.linkedin.com/in/prajwalshah/' target="_blank" onClick = {handleOpen}><img src = {linkedin} ></img></a>
+                <a href = 'https://github.com/prajwalshah19' target="_blank" onClick = {handleOpen} ><img src = {github}></img></a>
 
             </div>
 

@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-import {Sidebar} from './components/Sidebar'
+
 import {MainScreen} from './components/MainScreen'
-import { HomeScreen } from './components/HomeScreen';
+
  
 function App() {
   return (

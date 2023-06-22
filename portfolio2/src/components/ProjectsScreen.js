@@ -19,7 +19,7 @@ export function ProjectsScreen(props) {
         }, 
 
         {
-            title: "Test", 
+            title: "TradeBot", 
             description: "This is a placeholder", 
             img: null, 
             imgClass: "none",

@@ -3,8 +3,14 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 import '../App.css'
 import AccendreIcon from '../assets/accendre.svg'
-import insta from '../assets/instagram.svg'
-import tiktok from '../assets/tiktok.svg'
+
+import html from '../assets/html.svg'
+import css from '../assets/css.svg'
+import js from '../assets/js.svg'
+import react from '../assets/react.svg'
+import python from '../assets/python.svg'
+import rails from '../assets/rails.svg'
+
 
 import SlideShow from './SlideShow.js'
 
@@ -54,9 +60,9 @@ export function ProjectAccendre(props) {
         <Dropdown.Menu id = 'tocMenu'>
             <Dropdown.Item href="#busDev">Business Development</Dropdown.Item>
             <Dropdown.Item href="#entMind">Entrepreneurial Mindset</Dropdown.Item>
-            <Dropdown.Item href="#comSkills">Communication Skills</Dropdown.Item>
+            
             <Dropdown.Item href="#techStack">Tech Stack</Dropdown.Item>
-            <Dropdown.Item href="#conclude">Conclusion</Dropdown.Item>
+            
         </Dropdown.Menu>
         </Dropdown>
         
@@ -185,28 +191,50 @@ export function ProjectAccendre(props) {
         </div>
 
 
-        <div
-        className = 'synopsisCon'
-        id = "comSkills"
-        >
-        <h2>Communication Skills</h2>
-        </div>
+
 
         <div
         className = 'synopsisCon'
         id = "techStack"
         >
         <h2>Tech Stack</h2>
+
+            <div
+            className = "stackCon"
+            >
+            
+                <div className = 'stackHTML'>
+                    <img src = {html}></img>
+                    HTML
+                </div>
+                <div className = 'stackHTML'>
+                    <img src = {css}></img>
+                    CSS
+                </div>
+                <div className = 'stackHTML'>
+                    <img src = {js}></img>
+                    JavaScript
+                </div>
+                <div className = 'stackHTML'>
+                    <img src = {react}></img>
+                    ReactJS (Application Framework)
+                </div>
+                <div className = 'stackHTML'>
+                    <img src = {python}></img>
+                    Python (Workout Algorithm)
+                </div>
+                <div className = 'stackHTML'>
+                    <img src = {rails}></img>
+                    Ruby on Rails (API)
+                </div>
+
+            </div>
+
         </div>
 
+        
 
 
-        <div
-        className = 'synopsisCon'
-        id = "conclude"
-        >
-        <h2>Conclusion</h2>
-        </div>
 
 
 

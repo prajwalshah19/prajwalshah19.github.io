@@ -205,27 +205,29 @@ export function ProjectAccendre(props) {
             
                 <div className = 'stackHTML'>
                     <img src = {html}></img>
-                    HTML
+                    <p>HTML</p>
+                    
                 </div>
                 <div className = 'stackHTML'>
                     <img src = {css}></img>
-                    CSS
+                    
+                    <p>CSS</p>
                 </div>
                 <div className = 'stackHTML'>
                     <img src = {js}></img>
-                    JavaScript
+                    <p>JavaScript</p>
                 </div>
                 <div className = 'stackHTML'>
                     <img src = {react}></img>
-                    ReactJS (Application Framework)
+                    <p>React (Application)</p>
                 </div>
                 <div className = 'stackHTML'>
                     <img src = {python}></img>
-                    Python (Workout Algorithm)
+                    <p>Python (Algorithm)</p>
                 </div>
                 <div className = 'stackHTML'>
                     <img src = {rails}></img>
-                    Ruby on Rails (API)
+                    <p>Rails (API)</p>
                 </div>
 
             </div>

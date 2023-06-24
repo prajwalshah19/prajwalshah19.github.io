@@ -47,6 +47,10 @@ html {
 
 .sidebarElements > ul {
   list-style: none;
+  @media screen and (max-width: 768px) {
+    display: none;
+
+  }
   
 }
 
@@ -55,6 +59,7 @@ html {
   text-decoration: none;
   
 }
+
 
 .sidebarElements > ul > li > a:hover{
   color: darkgrey;
@@ -178,7 +183,7 @@ html {
     font-size: 0.7em;
 }
 
-.homeScreen, .projects, .about, .progress, .contact{
+.homeScreen, .projects, #about, .progress, .contact{
     color:white;
     background-color: #3c486b;
     padding: 0vh 3vw 0 3vw;
@@ -208,26 +213,83 @@ html {
   }
 }
 
-.education {
-  margin-top: 3vh;
-  padding-left: 0;
+.education, .bio, .experience, .skills {
+  margin-top: 2vh;
+  padding: 0 1vw 0 1vw;
 }
 
-.education  >h3 {
-  font-size: 1em;
+.school {
+  margin: 0 0 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.school > img {
+  margin: 0 2vw 0 0;
+  max-width: 20%;
+  @media screen  and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.expImg {
+  
+  @media screen  and (max-width: 700px) {
+    display: none;
+  }
+}
+.schoolCon > h3 {
+  font-size: 1.3em;
   
 
   
+}
+
+.schoolCon > h4 {
+  font-size: 0.8em;
+}
+
+.schoolCon > p {
+  font-size: 1em;
 }
 
 #about {
-  padding: 7vh 0 0 0;
+  
 }
 #about > h1 {
+  padding: 9vh 0 0 0;
   text-align: center;
   font-size: 3em;
 }
+.skills {
+  margin: 0 2vw 0 0;
+}
+.skillsCon {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw 0 2vw;
+  @media screen  and (max-width: 768px) {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
 
+}
+.skillsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillsItem > h2 {
+  font-size: 1em;
+}
+.skillsItem > img {
+  max-width: 4vw;
+  padding: 0 0 0.5vh 0;
+  filter: invert(100%) sepia(2%) saturate(7489%) hue-rotate(197deg) brightness(105%) contrast(100%);
+}
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

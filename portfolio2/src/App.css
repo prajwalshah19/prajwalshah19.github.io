@@ -255,9 +255,7 @@ html {
   font-size: 1em;
 }
 
-#about {
-  
-}
+
 #about > h1 {
   padding: 9vh 0 0 0;
   text-align: center;
@@ -276,6 +274,13 @@ html {
     grid-gap: 20px;
   }
 
+}
+#stackCon {
+  @media screen  and (max-width: 768px) {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
 }
 .skillsItem {
   display: flex;

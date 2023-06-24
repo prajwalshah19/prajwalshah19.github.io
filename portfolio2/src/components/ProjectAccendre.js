@@ -24,7 +24,35 @@ export function ProjectAccendre(props) {
         "https://www.youtube.com/embed/qp0HIF3SfI4"
     ]
  
+    const stack = [
 
+        {
+            title: "JavaScript",
+            img: js
+        },
+        {
+            title: "HTML",
+            img: html
+        },
+        {
+            title: "CSS",
+            img: css
+        },
+        {
+            title: "ReactJS",
+            img: react
+        },
+        {
+            title: "Python (Algorithm)",
+            img: python
+        },
+        {
+            title: "Rails (API)",
+            img: rails
+        }
+        
+        
+    ]
     function onClick(event) {
         console.log('click worked')
         console.log(event)
@@ -200,36 +228,24 @@ export function ProjectAccendre(props) {
         <h2>Tech Stack</h2>
 
             <div
-            className = "stackCon"
+            className = "skills"
             >
             
-                <div className = 'stackHTML'>
-                    <img src = {html}></img>
-                    <p>HTML</p>
-                    
+            <div
+                className='skillsCon'
+                id = "stackCon"
+                >
+                {stack.map (item => {
+                    return (
+                        <div
+                        className = 'skillsItem'
+                        >
+                        <img src = {item.img} />
+                        <h2>{item.title}</h2>
+                        </div>
+                    )
+                })}
                 </div>
-                <div className = 'stackHTML'>
-                    <img src = {css}></img>
-                    
-                    <p>CSS</p>
-                </div>
-                <div className = 'stackHTML'>
-                    <img src = {js}></img>
-                    <p>JavaScript</p>
-                </div>
-                <div className = 'stackHTML'>
-                    <img src = {react}></img>
-                    <p>React (Application)</p>
-                </div>
-                <div className = 'stackHTML'>
-                    <img src = {python}></img>
-                    <p>Python (Algorithm)</p>
-                </div>
-                <div className = 'stackHTML'>
-                    <img src = {rails}></img>
-                    <p>Rails (API)</p>
-                </div>
-
             </div>
 
         </div>

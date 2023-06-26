@@ -25,7 +25,7 @@ html {
   color: #3c486b;
   font-size: 1.8rem;
   z-index: 2;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     display: flex;
     position: fixed;
     width: 100%;
@@ -40,7 +40,7 @@ html {
     display: flex;
     flex-direction: column;
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 770px) {
       display: none;
 
     }
@@ -48,7 +48,7 @@ html {
 
 .sidebarElements > ul {
   list-style: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     display: none;
 
   }
@@ -75,6 +75,10 @@ html {
 
   filter: invert(26%) sepia(15%) saturate(1440%) hue-rotate(187deg) brightness(95%) contrast(89%);
   max-width: 50%;
+  @media screen  and (max-width: 770px) {
+    display: none;
+
+  }  
 }
 
 .logoCon {
@@ -99,7 +103,7 @@ html {
   align-items: center;
   padding-left: 93%;
 
-  @media screen  and (min-width: 768px) {
+  @media screen  and (min-width: 765px) {
       display: none;
 
     }  
@@ -301,6 +305,13 @@ html {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   color: #3c486b;
+  @media screen  and (max-width: 770px) {
+    
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+
 }
 
 .projectCard {

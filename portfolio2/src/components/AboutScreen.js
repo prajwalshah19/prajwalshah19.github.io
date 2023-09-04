@@ -19,8 +19,8 @@ export function AboutScreen(props) {
 
         {
             title: 'Purdue University - West Lafayette', 
-            subheading: 'Major in Computer Science | Minor in Mathematical Economics',
-            coursework: ['Multivariate Calculus', 'Object Oriented Programming with Java', 'Datamine Learning Community'], 
+            subheading: 'Major in Computer Science | Minor in Math and Economics',
+            coursework: ['Multivariate Calculus', 'Object Oriented Programming with Java', 'Datamine Learning Community', 'Intermediate Microeconomic Theory'], 
             img: purdue, 
             
         },
@@ -37,6 +37,15 @@ export function AboutScreen(props) {
     ]
     const experiences = [
         {
+            title: ['Market Analytics and Business Insights Team', 'Abbvie'],
+            timeframe: ['August 2023', 'Present'], 
+            highlights: [ 'Joined the MABI team at Abbvie as a part of the Purdue Datamine corporate partnership',
+             'Implemented an XGBoost model with Shapely values in Python to help determine the effectiveness of various touchpoint sequences when marketing Abbvie products to healthcare professionals'
+
+            ],
+            img: null
+        },
+        {
             title: ['CEO', 'Accendre'],
             timeframe: ['September 2021', 'May 2023'],
             highlights: [ 'Founded an online workout service for student-athletes as a part of the Incubator Class at Naperville Central High School',
@@ -49,7 +58,7 @@ export function AboutScreen(props) {
         },
         {
             title: ['Code Sensei', 'Code Ninjas'],
-            timeframe: ['July 2022', 'Present'], 
+            timeframe: ['July 2022', 'August 2023'], 
             highlights: [ 'Taught elementary and junior high aged children the basics of game development, ranging from web-based games in Javascript, to Roblox development in Lua, and Unity development in C#',
                           'Developed lesson plans and ran camps in topics such as web development, Python, Filmmaking, and Electronics',
                           'Tasked with presenting potential customers with benefits of learning computer science at an early age and selling program to parents'
@@ -57,6 +66,7 @@ export function AboutScreen(props) {
             ],
             img: codeninjas
         }
+        
     ]
     const skills = [
         {

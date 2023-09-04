@@ -86,10 +86,10 @@ export function ProjectAccendre(props) {
         </Dropdown.Toggle>
 
         <Dropdown.Menu id = 'tocMenu'>
-            <Dropdown.Item href="#busDev">Business Development</Dropdown.Item>
-            <Dropdown.Item href="#entMind">Entrepreneurial Mindset</Dropdown.Item>
+            <Dropdown.Item href="projects/accendre/#busDev">Business Development</Dropdown.Item>
+            <Dropdown.Item href="projects/accendre/#entMind">Entrepreneurial Mindset</Dropdown.Item>
             
-            <Dropdown.Item href="#techStack">Tech Stack</Dropdown.Item>
+            <Dropdown.Item href="projects/accendre/#techStack">Tech Stack</Dropdown.Item>
             
         </Dropdown.Menu>
         </Dropdown>
@@ -101,7 +101,7 @@ export function ProjectAccendre(props) {
         id = "busDev"
         >
             <h2>Business Development</h2>
-            <p>Accendre through many iterations before reaching its final destination. At each stage of the process, we aimed to implement aspects of the lean startup methodology, especially the ideas of continuous validation and implementation to ensure our product development was efficient. </p>
+            <p>Accendre went through many iterations before reaching its final destination. At each stage of the process, we aimed to implement aspects of the lean startup methodology, especially the ideas of continuous validation and implementation to ensure our product development was efficient. </p>
             <div
             className='synopsisCon'
             id = "bmcCon"

@@ -22,6 +22,7 @@ function App() {
             <Route path = "/progress" element = {<MainScreen page = 'progress'/>} />
             <Route path = "/contact" element = {<MainScreen page = 'contact'/>} />
             <Route path = "/projects/accendre" element = {<MainScreen page = 'projects/accendre'/>} />
+            <Route path = "/projects/tradebot" element = {<MainScreen page = 'projects/tradebot'/>} />
            
 
         </Routes>

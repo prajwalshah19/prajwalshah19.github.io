@@ -3,6 +3,7 @@ import '../App.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Accendre from '../assets/accendre.svg'
+import TradeBot from '../assets/tradebot.png'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -20,18 +21,12 @@ export function ProjectsScreen(props) {
 
         {
             title: "TradeBot", 
-            description: "This is a placeholder", 
-            img: null, 
+            description: "In the summer of 2023, I worked on an algorithmic trading bot with Python.", 
+            img: TradeBot, 
             imgClass: "none",
-            ref: () => (navigate("/projects"))
+            ref: () => (navigate("/projects/tradebot"))
         },
-        {
-            title: "Test", 
-            description: "This is a placeholder", 
-            img: null, 
-            imgClass: "none",
-            ref: () => (navigate("/projects"))
-        }
+
     ]
 
  

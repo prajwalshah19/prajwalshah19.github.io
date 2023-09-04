@@ -352,6 +352,19 @@ html {
   
 }
 
+#titleImage2 {
+  
+  padding-top: 5vh;
+  max-width: 90vw;
+
+
+  @media only screen and (min-width: 768px) {
+    max-width: 60vw;
+    margin-top: 1vh;
+  }
+  
+}
+
 .synopsisCon > h2{
 
   font-size: 2em;

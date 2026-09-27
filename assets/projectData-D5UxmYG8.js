@@ -1,4 +1,4 @@
-import{t as e}from"./sanity-x4q1rOzk.js";var t=async()=>await e.fetch(`*[_type == "project"] | order(date desc) {
+import{t as e}from"./sanity-DTiNofc_.js";var t=async()=>await e.fetch(`*[_type == "project"] | order(date desc) {
       _id,
       name,
       slug,

@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BFHTAqYS.js";var t=e();function n({label:e}){return(0,t.jsxs)(`p`,{role:`alert`,className:`px-6 py-8 text-center text-sm text-primary dark:text-secondary`,children:[`Couldn’t load `,e,`. Please refresh to try again.`]})}export{n as t};
